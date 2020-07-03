@@ -1,8 +1,8 @@
 git# Nodejs
 node_modules
 
-# npm
-package-lock.json
+# # npm
+# package-lock.json
 
-# environment variables
-.env
+# # environment variables
+# .env
