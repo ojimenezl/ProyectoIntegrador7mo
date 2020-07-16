@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {{#if error }}
   <div class="alert alert-warning alert-dismissible fade show" role="alert">
     {{error}}
@@ -15,3 +16,22 @@
     </button>
   </div>
 {{/each}}
+=======
+{{#if error }}
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    {{error}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+{{/if}}
+
+{{#each errors}}
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{text}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+{{/each}}
+>>>>>>> 9c2d4330f5c960df062bad887963af30d9b328f0

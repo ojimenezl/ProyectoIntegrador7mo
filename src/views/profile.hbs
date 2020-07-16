@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,4 +47,54 @@
 
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Profle</title>
+ 
+</head>
+
+<body>
+
+ 
+
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                
+                <div class="card animated fadeInDown">
+                    <img src="{{path}}" class="card-img-top" alt="{{filename}}">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            {{title}}
+                        </h5>
+                        <p class="card-text">
+                           {{description}}
+                        </p>
+                        <p>
+                            {{!-- {{ format(image.created_at)}} --}}
+                        </p>
+                        <a href="/image/{{_id}}?_method=DELETE/delete"  method="POST"class="btn btn-danger btn-block">
+                            Delete Image
+                        </a>
+                        <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" class="btn btn-danger btn-block btn-sm">Delete</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+>>>>>>> 9c2d4330f5c960df062bad887963af30d9b328f0
 </html>
