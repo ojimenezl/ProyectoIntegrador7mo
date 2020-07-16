@@ -7,6 +7,10 @@ notesCtrl.renderNoteForm = (req, res) => {
     res.render("notes/new-note");
 };
 
+
+///////////////////////////////////////////////////
+
+//////////////////////////////////////////////
 notesCtrl.createNewNote = async(req, res) => {
     const { title, description } = req.body;
     const errors = [];

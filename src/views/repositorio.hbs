@@ -22,6 +22,7 @@
                     <img src="{{path}}" class="card-img-top" alt="{{filename}}">
                     <div class="card-body">
                         <h5 class="card-title">{{title}}</h5>
+                        <h5 class="card-title">{{predic}}</h5>
                         <p class="card-text">{{description}}
                         <p>{{created_at}}</p>
                         <a href="/image/{{_id}}" class="btn btn-primary">
@@ -30,7 +31,7 @@
                         <form action="/imagedelete/{{_id}}?_method=DELETE" method="POST">
                         <input type="hidden" name="_method" value="DELETE">
                         <button type="submit" class="btn btn-danger btn-block btn-sm">Delete</button>
-                        </form>
+                        </form> 
                     </div>
                 </div>
                 {{/each}}

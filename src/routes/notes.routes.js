@@ -3,12 +3,12 @@ const router = express.Router();
 
 // Controller
 const {
-  renderNoteForm,
-  createNewNote,
-  renderNotes,
-  renderEditForm,
-  updateNote,
-  deleteNote
+    renderNoteForm,
+    createNewNote,
+    renderNotes,
+    renderEditForm,
+    updateNote,
+    deleteNote
 } = require("../controllers/notes.controller");
 
 // Helpers

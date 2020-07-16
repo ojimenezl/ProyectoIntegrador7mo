@@ -11,7 +11,7 @@ const mongoose = require('mongoose');
 const uuid = require('uuid').v4;
 const { format } = require('timeago.js');
 const multer = require('multer');
-
+// console.log
 // Initializations
 const app = express();
 require('./config/passport');

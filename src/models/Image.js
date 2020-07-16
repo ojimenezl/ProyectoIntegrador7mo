@@ -1,6 +1,7 @@
 const { Schema, model } = require('mongoose');
 
 const imageSchema = new Schema({
+    predic: {type: String},
     title: {type: String},
     description: {type: String},
     filename: {type: String},
