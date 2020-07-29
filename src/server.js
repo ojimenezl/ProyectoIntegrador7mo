@@ -47,6 +47,7 @@ const storage = multer.diskStorage({
         cb(null, uuid() + path.extname(file.originalname));
     }
 })
+
 app.use(multer({ storage }).single('image'));
 app.use(passport.initialize());
 app.use(passport.session());
